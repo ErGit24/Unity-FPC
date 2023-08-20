@@ -1,29 +1,30 @@
 # Unity FPS Controller
 
-Welcome to the Unity FPS Controller project! This repository contains a first-person controller developed in Unity using C#. The controller provides functionality for player movement, camera rotation, jumping, crouching, and a realistic headbob effect. It comes with customizable settings including movement speeds, camera sensitivity, jump force, gravity, crouching parameters, and headbob parameters. The code is organized into modular functions that handle different aspects of the control system. This project serves as a foundational structure for implementing first-person movement in your Unity games.
+Dette repository indeholder en førstepersons controller udviklet i Unity med C#. Controlleren giver funktionalitet til spillerbevægelse, kamerarotation, hop, dukke og en realistisk "Headbob"-effekt. Koden er organiseret i modulære funktioner, der håndterer forskellige aspekter af kontrolsystemet. Dette projekt er en grundlæggende struktur, som du kan bygge videre på for at implementere førstepersons bevægelse i dine Unity-spil.
 
-## Features
+## Funktioner
 
-- Smooth player movement
-- Realistic camera rotation
-- Responsive jumping mechanics
-- Crouching functionality
-- Immersive headbob effect
+- Flydende spillerbevægelse med justerbare hastigheder.
+- Realistisk kamerarotation med indstillelig følsomhed.
+- Responsiv hoppefunktionalitet med tilpasselig hoppekraft.
+- Duk funktionalitet med konfigurerbare parametre.
+- Semi realistisk "Headbob"-effekt med justerbare indstillinger.
 
-## Usage
+## Anvendelse
 
-1. Clone or download the repository.
-2. Open the project in Unity.
-3. Explore the `FPSController` script to understand its functionality.
-4. Customize the settings in the Inspector to fit your game's requirements.
-5. Build upon the provided code to integrate the controller into your game.
+1. Klon/Download repository.
+2. Åbn projektet i Unity.
+3. Udforsk `FPSController`-scriptet for at forstå funktionaliterne.
+4. Tilpas indstillingerne i Inspektøren, så de passer til dine spilkrav.
+5. Byg videre på den inkluderede kode for at integrere controlleren i dit spil.
 
-## Configuration
+## Konfiguration
 
-Adjust the controller's behavior and appearance through various parameters in the Inspector:
+Juster controllerens adfærd og udseende via forskellige parametre i Inspektøren:
 
-- Movement speeds for walking, sprinting, and crouching.
-- Camera sensitivity for both X and Y axes.
-- Jump force and gravity settings.
-- Crouching height, transition time, and head position adjustments.
-- Headbob parameters for walking, sprinting, and crouching.
+- Bevægelseshastigheder for gang, sprint og duk.
+- Kamerafølsomhed for både X- og Y-axis.
+- HoppeStyrke og indstillinger for tyngdekraft.
+- Højde for duk, overgangstid og justering af hovedposition.
+- HEadbob-parametre for gang, sprint og duk.
+
