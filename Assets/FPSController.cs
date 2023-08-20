@@ -14,6 +14,7 @@ public class FPSController : MonoBehaviour
     [SerializeField] private bool canJump = true;
     [SerializeField] private bool canCrouch = true;
     [SerializeField] private bool canUseHeadbob = true;
+    [SerializeField] private bool willSlideOnSlopes = true;
 
     [Header("Controls")]
     [SerializeField] private KeyCode sprintKey = KeyCode.LeftShift;
@@ -24,6 +25,7 @@ public class FPSController : MonoBehaviour
     [SerializeField] private float walkSpeed = 3.0f;
     [SerializeField] private float sprintSpeed = 6.0f;
     [SerializeField] private float crouchSpeed = 1.5f;
+    [SerializeField] private float slopeSpeed = 8f;
 
     [Header("Look")]
     [SerializeField, Range(1, 10)] private float lookSpeedX = 2.0f;
@@ -40,7 +42,7 @@ public class FPSController : MonoBehaviour
     [SerializeField] private float standHeight = 4f;
     [SerializeField] private float timeToCrouch = 0.25f;
     [SerializeField] private Vector3 crouchCenter = new Vector3(0, 0.5f, 0);
-    [SerializeField] private Vector3 standCenter = new Vector3(0, 1f, 0); // Updated standCenter value
+    [SerializeField] private Vector3 standCenter = new Vector3(0, 1f, 0); 
     private bool isCrouching;
     private bool duringCrouchAnimation;
 
@@ -53,6 +55,8 @@ public class FPSController : MonoBehaviour
     [SerializeField] private float crouchHeadbobAmount = 0.025f;
     private float defaultYPos = 0; 
     private float timer;
+
+    // Slider 
 
     private Camera playerCamera;
     private CharacterController characterController;
@@ -117,7 +121,7 @@ public class FPSController : MonoBehaviour
     {
         if (!characterController.isGrounded) return;
 
-        if (Mathf.Abs(moveDirection.x) > 0.1f || Mathf.Abs(moveDirection.z) > 0.1f) // Changed MathF to Mathf
+        if (Mathf.Abs(moveDirection.x) > 0.1f || Mathf.Abs(moveDirection.z) > 0.1f) 
         {
             timer += Time.deltaTime * (isCrouching ? crouchHeadbobSpeed : IsSprinting ? sprintHeadbobSpeed : walkHeadbobSpeed);
             playerCamera.transform.localPosition = new Vector3(
