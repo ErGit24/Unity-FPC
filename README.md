@@ -1,14 +1,14 @@
 # Unity FPS Controller i C#
 
-Dette repository indeholder en førstepersons controller udviklet i Unity med C#. Controlleren giver funktionalitet til spillerbevægelse, kamerarotation, hop, dukke og en realistisk "Headbob"-effekt. Koden er organiseret i modulære funktioner, der håndterer forskellige aspekter af kontrolsystemet. Dette projekt er en grundlæggende struktur, som du kan bygge videre på for at implementere førstepersons bevægelse i dine Unity-spil.
+Dette repository indeholder en førstepersons controller udviklet i Unity med C#. Controlleren giver funktionalitet til spillerbevægelse, kamerarotation, hop, dukke og "Headbob"-effekt. Koden er organiseret i modulære funktioner, der håndterer forskellige aspekter af kontrolsystemet. Dette projekt er en grundlæggende struktur, som du kan bygge videre på for at implementere førstepersons bevægelse i dine Unity-spil.
 
 ## Funktioner
 
-- Flydende spillerbevægelse med justerbare hastigheder.
-- Realistisk kamerarotation med indstillelig følsomhed.
-- Responsiv hoppefunktionalitet med tilpasselig hoppekraft.
+- spillerbevægelse med justerbare hastigheder.
+- kamerarotation med indstillelig følsomhed.
+- hoppefunktionalitet med tilpasselig hoppeStyrke.
 - Duk funktionalitet med konfigurerbare parametre.
-- Semi realistisk "Headbob"-effekt med justerbare indstillinger.
+- "Headbob"-effekt med justerbare indstillinger.
 
 ## Anvendelse
 
