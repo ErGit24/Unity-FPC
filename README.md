@@ -14,7 +14,7 @@ Dette repository indeholder en førstepersons controller udviklet i Unity med C#
 
 1. Klon/Download repository.
 2. Åbn projektet i Unity.
-3. Udforsk `FPSController`-scriptet for at forstå funktionaliterne.
+3. Prøv `FPSController`-scriptet for at forstå funktionaliterne.
 4. Tilpas indstillingerne i Inspektøren, så de passer til dine spilkrav.
 5. Byg videre på den inkluderede kode for at integrere controlleren i dit spil.
 
